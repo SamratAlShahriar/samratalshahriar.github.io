@@ -25,7 +25,7 @@ $(document).ready(function () {
         $('.menu-btn i').toggleClass("active")
     });
 
-    var workList = ["Android Developer", "Blogger", "Designer"];
+    var workList = ["Developer", "Blogger", "Designer"];
 
     // typing animation script
     var typed = new Typed(".typing", {
