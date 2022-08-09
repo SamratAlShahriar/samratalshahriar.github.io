@@ -541,11 +541,16 @@ footer {
     margin: 10px 0;
 }
 
+.contact .contact-content .left .icons .row svg{
+    width: 24px;
+    height: 24px;
+}
+
 .contact .contact-content .left .others-profile {
     width: 50%;
     display: flex;
     justify-content: space-between;
-    
+    margin-top: 20px;
 
 }
 
