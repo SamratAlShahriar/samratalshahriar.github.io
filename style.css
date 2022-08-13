@@ -53,6 +53,10 @@ html::-webkit-scrollbar {
     bottom: 45px;
 }
 
+.scroll-up-btn:hover {
+    filter: brightness(80%);
+}
+
 /* navbar styling */
 .navbar {
     /* background: crimson; */
@@ -401,7 +405,7 @@ footer {
     font-weight: 400;
 }
 
-.educations .edu-content .timeline p{
+.educations .edu-content .timeline p {
     font-size: 0.8em;
     font-weight: 500;
     margin: 0px;
@@ -413,6 +417,7 @@ footer {
     margin-bottom: 16px;
     position: relative;
 }
+
 .educations .edu-content .timeline .event:first-of-type {
     padding-top: 0;
     margin-top: -30px;
@@ -680,6 +685,7 @@ footer {
 .contact .contact-content .left .others-profile a:first-child {
     opacity: 0.66;
 }
+
 .contact .contact-content .left .others-profile a:first-child:hover {
     opacity: 1;
 }
