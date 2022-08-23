@@ -26,6 +26,20 @@
     <div class="scroll-up-btn">
         <i class="fas fa-angle-up"></i>
     </div>
+
+    <div class="popup-screen">
+        <div class="popup-box">
+            <div class="popup-header">
+                <a id="btn-down" href="#">Download</a>
+                <i class="fas fa-close" id="popup-btn-close"></i>
+            </div>
+            <!-- <object class="popuppdf" data="resume/resume1.pdf" type="application/pdf"></object> -->
+            <!-- <embed class="popuppdf" src="resume/resume1.pdf" type="application/pdf"></embed> -->
+            <iframe src="resume/resume1.pdf" class="popuppdf"></iframe>
+        </div>
+
+    </div>
+
     <nav class="navbar">
         <div class="max-width">
             <div class="logo"><a href="#">Portfo<span>lio.</span></a></div>
@@ -71,7 +85,7 @@
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, harum modi. Officia suscipit
                         placeat perspiciatis odit, doloribus saepe incidunt repellat soluta repudiandae inventore
                         assumenda aperiam, explicabo iusto ducimus cum at!</p>
-                    <a href="resume/resume1.pdf">Download CV</a>
+                    <button id="btn-popup-show" href="">Download CV</button>
                 </div>
             </div>
         </div>

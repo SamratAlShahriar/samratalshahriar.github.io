@@ -25,6 +25,20 @@ $(document).ready(function () {
         $('.menu-btn i').toggleClass("active")
     });
 
+    //popup screen script
+    $('#btn-popup-show').click(function(){
+        $('.popup-screen').addClass("active");
+    });
+
+    $('#popup-btn-close').click(function(){
+        $('.popup-screen').removeClass("active");
+    });
+    
+  
+
+   
+
+
     var workList = ["Developer", "Blogger", "Designer"];
 
     // typing animation script
