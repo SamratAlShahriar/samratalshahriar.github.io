@@ -39,7 +39,7 @@ $(document).ready(function () {
    
 
 
-    var workList = ["Developer", "Blogger", "Designer"];
+    var workList = ["App Developer", "Contest Programmer", "Blogger"];
 
     // typing animation script
     var typed = new Typed(".typing", {

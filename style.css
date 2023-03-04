@@ -737,14 +737,16 @@ footer {
     margin: 10px 0 7px 0;
 }
 
-.projects .carousel .card img {
+.projects .carousel .card div img {
     height: 150px;
     width: 150px;
+    cursor: pointer;
     object-fit: cover;
     border-radius: 50%;
     border: 5px solid crimson;
     transition: all 0.3s ease;
 }
+
 
 .owl-dots {
     text-align: center;
