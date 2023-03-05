@@ -1,14 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
 
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
-    cursor: url("./images/logos/cursor.svg"), url("images/logos/cursor.svg"), default;
+    cursor: url("./images/logos/cursor.svg"), url("images/logos/cursor.svg"), default;    
+}
 
-    --primary-color: #ff1144;
-    
+:root{
+    --primary-color: #8c9b08;
 }
 
 /* Hide scrollbar for IE, Edge and Firefox */
@@ -851,7 +852,7 @@ footer {
 }
 
 .contact .contact-content .left .others-profile img:hover {
-    outline: 5px solid rgba(220, 20, 60, 1) !important;
+    outline: 5px solid var(--primary-color) !important;
     overflow: hidden;
     position: relative;
     filter: grayscale(0%);

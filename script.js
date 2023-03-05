@@ -39,10 +39,19 @@ $(document).ready(function () {
     $('#popup-btn-close').click(function(){
         $('.popup-screen').removeClass("active");
     });
-    
-  
 
-   
+
+    //load random site theme color
+    var genColorTheme = function(){
+        var colorList = ['#ff1144', '#006917', '#0b539b', '#80099e', '#ff4726', '#8c9b08'];
+        var totalColor = colorList.length;
+        let randomNumber = Math.random() * totalColor;
+        let position = Math.floor(randomNumber);
+        console.log(position);        
+        var rootElement = document.querySelector(':root');
+        rootElement.style.setProperty('--primary-color', colorList[position]);
+    }
+    genColorTheme();
 
 
     var workList = ["App Developer", "Contest Programmer", "Blogger"];
