@@ -616,9 +616,14 @@ footer {
 
 .skills .skill-content .left p {
     text-align: justify;
+    overflow: hidden;
+    height: 120px;
+}
+.skills .skill-content .left p.read-more{
+    height: auto;
 }
 
-.skills .skill-content .left a {
+.skills .skill-content .left #read-more {
     display: inline-block;
     background: var(--primary-color);
     color: #ffffff;
@@ -631,11 +636,18 @@ footer {
     transition: all 0.3 ease;
     cursor: pointer;
 }
+.skills .skill-content .left #read-more::before{
+    content: 'Read More';
+}
 
-.skills .skill-content .left a:hover {
+.skills .skill-content .left #read-more.read-more::before {
+    content: 'Read Less';
+}
+
+ .skills .skill-content .left #read-more.read-more {
     color: var(--primary-color);
     background: none;
-}
+} 
 
 .skills .skill-content .right .bars {
     margin-bottom: 16px;

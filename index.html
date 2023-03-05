@@ -173,7 +173,7 @@
                 <div class="column left">
                     <div class="text">My creative skills & experiences</div>
                     <p>As a programmer, I have honed my creative skills through various projects and experiences. I have gained expertise in programming languages such as Java, Dart, and Kotlin, and have experience in developing mobile applications with native android and flutter framework. I have also participated in several programming contests, where I was able to apply my problem-solving skills to real-world challenges. Through these experiences, I have learned to think outside the box and come up with innovative solutions to complex problems. Additionally, I am passionate about staying up-to-date with the latest technologies and tools in the industry, which allows me to bring new and fresh perspectives to my work.</p>
-                    <a href="#">Read more...</a>
+                    <div id="read-more"></div>
                 </div>
                 <div class="column right">
                     <div class="bars">
@@ -323,20 +323,25 @@
 
                 <div class="column right">
                     <div class="text">Message</div>
-                    <form action="#" method="POST">
+                    <form action="https://formsubmit.co/beneyi9859@pubpng.com" method="POST">
+                        <!-- formsubmit options start -->
+                        <input type="hidden" name="_template" value="table">
+                        <input type="hidden" name="_subject" value="New submission!">
+                        <!-- formsubmit option ends -->
+
                         <div class="fields">
                             <div class="field name">
-                                <input type="text" placeholder="Name" required>
+                                <input name="name" type="text" placeholder="Name" required>
                             </div>
                             <div class="field email">
-                                <input type="text" placeholder="Email" required>
+                                <input type="email" name="email" placeholder="Email" required>
                             </div>
                         </div>
                         <div class="field subject">
-                            <input type="text" placeholder="Subject" required>
+                            <input type="text" name="subject" placeholder="Subject" required>
                         </div>
                         <div class="field textarea">
-                            <textarea name="" id="" cols="30" rows="10" placeholder="Message" required></textarea>
+                            <textarea name="message" id="" cols="30" rows="10" placeholder="Message" required></textarea>
                         </div>
                         <div class="button">
                             <button type="submit">Send Message</button>

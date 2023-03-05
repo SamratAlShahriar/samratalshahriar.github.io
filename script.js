@@ -25,6 +25,12 @@ $(document).ready(function () {
         $('.menu-btn i').toggleClass("active")
     });
 
+    //toggle read more script
+    $('#read-more').click(function () {
+        $('.skills .skill-content .left p').toggleClass("read-more")
+        $('.skills .skill-content .left #read-more').toggleClass("read-more")
+    });
+
     //popup screen script
     $('#btn-popup-show').click(function(){
         $('.popup-screen').addClass("active");
