@@ -44,8 +44,8 @@ $(document).ready(function () {
     // typing animation script
     var typed = new Typed(".typing", {
         strings: workList,
-        typeSpeed: 100,
-        backSpeed: 60,
+        typeSpeed: 50,
+        backSpeed: 30,
         loop: true
     });
 
