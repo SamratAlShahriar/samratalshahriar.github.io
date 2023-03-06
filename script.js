@@ -32,22 +32,33 @@ $(document).ready(function () {
     });
 
     //popup screen script
-    $('#btn-popup-show').click(function(){
+    $('#btn-popup-show').click(function () {
         $('.popup-screen').addClass("active");
     });
 
-    $('#popup-btn-close').click(function(){
+    $('#popup-btn-close').click(function () {
         $('.popup-screen').removeClass("active");
     });
 
 
     //load random site theme color
-    var genColorTheme = function(){
-        var colorList = ['#ff1144', '#006917', '#0b539b', '#80099e', '#ff4726', '#8c9b08'];
+    var genColorTheme = function () {
+        var colorList = [
+            '#ff1144', //crimson
+            '#006917', //green
+            '#07417a', //deepblue
+            '#1748e9', //bluelight
+            '#4d0786', //violet
+            '#cf4711', //deeporange
+            '#ffd00f', //yellow
+            '#ff1001', //red
+            '#8a0569', //purple
+            '#027981', //cyan
+        ];
         var totalColor = colorList.length;
         let randomNumber = Math.random() * totalColor;
         let position = Math.floor(randomNumber);
-        console.log(position);        
+        console.log(position);
         var rootElement = document.querySelector(':root');
         rootElement.style.setProperty('--primary-color', colorList[position]);
     }
