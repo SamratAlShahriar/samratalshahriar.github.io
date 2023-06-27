@@ -153,6 +153,7 @@ html::-webkit-scrollbar {
     color: var(--primary-color);
     border-color: var(--primary-color);
     transform: scale(1.03);
+    cursor: pointer;
 }
 
 .popup-screen .popup-box .popuppdf {
