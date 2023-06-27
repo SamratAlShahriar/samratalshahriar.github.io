@@ -377,7 +377,10 @@ footer {
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
+}
 
+.skills .skill-content{
+    align-items: start;
 }
 
 /* about section styling */
