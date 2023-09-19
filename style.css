@@ -622,7 +622,7 @@ footer {
 .skills .skill-content .left p {
     text-align: justify;
     overflow: hidden;
-    max-height: 120px;
+    max-height: 122px;
     transition: all 0.3s ease
 }
 .skills .skill-content .left p.read-more{
