@@ -44,6 +44,7 @@ $(document).ready(function () {
     //load random site theme color
     var genColorTheme = function () {
         var colorList = [
+            '#000000', //black
             '#ff1144', //crimson
             '#006917', //green
             '#07417a', //deepblue
@@ -54,6 +55,26 @@ $(document).ready(function () {
             '#ff1001', //red
             '#8a0569', //purple
             '#027981', //cyan
+
+            '#8B1874',
+            '#654E92',
+            '#F97B22',
+            '#0A4D68',
+            '#D14D72',
+            '#393646',
+            '#009FBD',
+            '#9A208C',
+            '#990000',
+            '#1A5D1A',
+            '#FF6666',
+            '#643843',
+            '#606C5D',
+            '#9C0F48',
+            '#0A1D37',
+            '#6F4C5B',
+            '#00AF91',
+
+
         ];
         var totalColor = colorList.length;
         let randomNumber = Math.random() * totalColor;
