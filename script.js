@@ -103,12 +103,16 @@ $(document).ready(function () {
         loop: true
     });
 
-
     // owl carousel script
-    $('.carousel').owlCarousel({
-        margin: 20,
+    var owl = $('.owl-carousel');
+    owl.owlCarousel({
+        items: 10,
         loop: true,
-        autoplayTimeOut: 200,
+        margin: 16,
+        slideTransition: '',
+        autoplay: true,
+        autoplaySpeed:700,
+        autoplayTimeout: 2000,
         autoplayHoverPause: true,
         responsive: {
             0: {
@@ -125,4 +129,10 @@ $(document).ready(function () {
             }
         }
     });
+
+
 });
+
+
+
+

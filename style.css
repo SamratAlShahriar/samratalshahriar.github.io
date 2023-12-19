@@ -687,6 +687,10 @@ footer {
     background: var(--primary-color);
 }
 
+.skills .skill-content .right .dart::before {
+    width: 80%;
+}
+
 .skills .skill-content .right .java::before {
     width: 80%;
 }
@@ -696,15 +700,15 @@ footer {
 }
 
 .skills .skill-content .right .html::before {
-    width: 80%;
+    width: 60%;
 }
 
 .skills .skill-content .right .css::before {
-    width: 70%;
+    width: 50%;
 }
 
 .skills .skill-content .right .mysql::before {
-    width: 75%;
+    width: 80%;
 }
 
 /* projects section styling */
@@ -725,7 +729,7 @@ footer {
 .projects .carousel .card {
     background: #222222;
     border-radius: 6px;
-    padding: 25px 35px;
+    padding: 12px 12px;
     text-align: center;
     transition: all 0.3s ease;
 }
@@ -751,8 +755,8 @@ footer {
 }
 
 .projects .carousel .card .text {
-    font-size: 25px;
-    font-weight: 500;
+    font-size: 22px;
+    font-weight: 600;
     margin: 10px 0 7px 0;
 }
 
