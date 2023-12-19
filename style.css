@@ -728,6 +728,7 @@ footer {
 
 .projects .carousel .card {
     background: #222222;
+    height: 350px;
     border-radius: 6px;
     padding: 12px 12px;
     text-align: center;

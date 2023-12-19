@@ -109,7 +109,7 @@ $(document).ready(function () {
         items: 10,
         loop: true,
         margin: 16,
-        slideTransition: '',
+        // slideTransition: '',
         autoplay: true,
         autoplaySpeed:700,
         autoplayTimeout: 2000,
@@ -119,12 +119,16 @@ $(document).ready(function () {
                 items: 1,
                 nav: false
             },
-            600: {
+            350: {
                 items: 2,
                 nav: false
             },
-            1000: {
+            750: {
                 items: 3,
+                nav: false
+            },
+            1000: {
+                items: 4,
                 nav: false
             }
         }
