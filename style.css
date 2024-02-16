@@ -993,14 +993,23 @@ footer span a:hover {
 }
 
 footer .footer-left {
-    width: 50%;
+    width: 33%;
 }
 
 footer .footer-right {
-    width: 50%;
+    width: 33%;
     text-align: right;
 }
 
+
+footer .footer-center {
+    width: 34%;
+    text-align: center;
+}
+
+footer .footer-center a{
+    color: white;
+}
 
 
 
