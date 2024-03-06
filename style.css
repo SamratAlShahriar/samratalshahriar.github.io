@@ -495,7 +495,7 @@ footer {
     margin: 10px 0 7px 0;
 }
 
-/* education and training summary section styling */
+/* education and working summary section styling */
 .educations {
     color: #ffffff;
     background: #111111;
@@ -507,7 +507,7 @@ footer {
 
 .educations .title::after {
     background: #111111;
-    content: 'where i learn';
+    content: 'how i grow';
 }
 
 
