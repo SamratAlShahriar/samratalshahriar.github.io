@@ -40,6 +40,25 @@ $(document).ready(function () {
         $('.popup-screen').removeClass("active");
     });
 
+    //on logo icon click listener
+    // Select the link element
+    var link = document.getElementById('applogo');
+        
+    // Add a click event listener to the link
+    link.addEventListener('click', function(event) {
+        // Prevent the default behavior of the link (navigating to "#")
+        event.preventDefault();
+        
+        // Perform some logic to determine the URL dynamically
+        var dynamicUrl = window.location.href; // Replace this with your dynamic URL logic
+        
+        // Set the href attribute of the link to the dynamic URL
+        link.href = dynamicUrl;
+        
+        // Navigate to the dynamic URL
+        window.location.href = dynamicUrl;
+    });
+
 
     //load random site theme color
     var genColorTheme = function () {
