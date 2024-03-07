@@ -51,12 +51,15 @@ $(document).ready(function () {
         
         // Perform some logic to determine the URL dynamically
         var dynamicUrl = window.location.href; // Replace this with your dynamic URL logic
+        var baseUrl = dynamicUrl.split('/').slice(0, 3).join('/');
         
         // Set the href attribute of the link to the dynamic URL
-        link.href = dynamicUrl;
+        link.href = baseUrl;
+       
         
         // Navigate to the dynamic URL
-        window.location.href = dynamicUrl;
+        window.location.href = baseUrl;
+        console.log("d url"+baseUrl);
     });
 
 
@@ -98,7 +101,6 @@ $(document).ready(function () {
         var totalColor = colorList.length;
         let randomNumber = Math.random() * totalColor;
         let position = Math.floor(randomNumber);
-        console.log(position);
         var rootElement = document.querySelector(':root');
         rootElement.style.setProperty('--primary-color', colorList[position]);
     }
