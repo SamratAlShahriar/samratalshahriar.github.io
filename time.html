@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time Chip</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: inline-block;
+            font-family: Arial, sans-serif;
+        }
+        #timeChip {
+            display: inline-block;
+            background: #ffffff;
+            padding: 6px 12px;
+            border-radius: 16px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+        #timeDisplay {
+            font-size: 0.9em;
+            color: #2c3e50;
+        }
+        #timeDisplay.error {
+            color: #e74c3c;
+        }
+    </style>
+</head>
+<body>
+    <div id="timeChip">
+        <span id="timeDisplay"></span>
+    </div>
+
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        const timeParam = urlParams.get('time');
+        const timeDisplay = document.getElementById('timeDisplay');
+        if (timeParam) {
+            try {
+                const date = new Date(timeParam);
+                if (isNaN(date.getTime())) throw new Error();
+                timeDisplay.textContent = date.toLocaleString('en-US', {
+                    year: 'numeric',
+                    month: 'short',
+                    day: 'numeric',
+                    hour: '2-digit',
+                    minute: '2-digit',
+                    hour12: true
+                });
+            } catch {
+                timeDisplay.classList.add('error');
+                timeDisplay.textContent = 'Invalid time';
+            }
+        } else {
+            timeDisplay.classList.add('error');
+            timeDisplay.textContent = 'No time in URL';
+        }
+    </script>
+</body>
+</html>
