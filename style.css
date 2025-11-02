@@ -1,14 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap'); */
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
-    cursor: url("./images/logos/cursor.svg"), url("images/logos/cursor.svg"), default;    
+    cursor: url("./images/logos/cursor.svg"), url("images/logos/cursor.svg"), default;
 }
 
-:root{
+:root {
     --primary-color: #000000;
 }
 
@@ -19,7 +19,7 @@ html {
     /* IE and Edge */
     scrollbar-width: none;
     /* Firefox */
-    
+
 }
 
 /* Hide scrollbar for Chrome, Safari and Opera */
@@ -52,7 +52,9 @@ html::-webkit-scrollbar {
     transition: all 0.3s ease;
     z-index: 9999;
 }
-.scroll-up-btn svg, .scroll-up-btn svg path{
+
+.scroll-up-btn svg,
+.scroll-up-btn svg path {
     cursor: pointer;
 }
 
@@ -60,7 +62,7 @@ html::-webkit-scrollbar {
     opacity: 1;
     pointer-events: auto;
     bottom: 45px;
-    
+
 }
 
 .scroll-up-btn:hover {
@@ -102,7 +104,7 @@ html::-webkit-scrollbar {
     align-items: center;
     flex-direction: column;
     box-shadow: 0 5px 25px rgba(0, 0, 0, 50%);
-    
+
 
 }
 
@@ -159,7 +161,7 @@ html::-webkit-scrollbar {
 .popup-screen .popup-box .popuppdf {
     width: 100%;
     height: 100%;
-    padding: 0 0px 10px 0px ;
+    padding: 0 0px 10px 0px;
 }
 
 
@@ -259,15 +261,18 @@ html::-webkit-scrollbar {
     cursor: pointer;
     display: none;
 }
-.menu-btn svg, .menu-btn path{
+
+.menu-btn svg,
+.menu-btn path {
     cursor: pointer;
 }
 
 /* home section styling */
 .home {
     display: flex;
-    background: url("images/fcov.png") no-repeat center;
+    background: url("images/fcov.webp") no-repeat center;
     background-attachment: fixed;
+    background-position: right center;
     background-size: cover;
     position: static;
     background-color: rgb(5, 7, 37);
@@ -376,11 +381,10 @@ footer {
 .contact .contact-content {
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
     justify-content: space-between;
 }
 
-.skills .skill-content{
+.skills .skill-content {
     align-items: start;
 }
 
@@ -510,6 +514,11 @@ footer {
     content: 'how i grow';
 }
 
+.educations .edu-content {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+}
 
 .educations .edu-content .timeline {
     border-left: 4px solid var(--primary-color);
@@ -625,8 +634,9 @@ footer {
     max-height: 122px;
     transition: all 0.3s ease
 }
-.skills .skill-content .left p.read-more{
-    max-height: 300px;
+
+.skills .skill-content .left p.read-more {
+    max-height: 500px;
 }
 
 .skills .skill-content .left #read-more {
@@ -642,7 +652,8 @@ footer {
     transition: all 0.3 ease;
     cursor: pointer;
 }
-.skills .skill-content .left #read-more::before{
+
+.skills .skill-content .left #read-more::before {
     content: 'Read More';
 }
 
@@ -650,10 +661,10 @@ footer {
     content: 'Read Less';
 }
 
- .skills .skill-content .left #read-more.read-more {
+.skills .skill-content .left #read-more.read-more {
     color: var(--primary-color);
     background: none;
-} 
+}
 
 .skills .skill-content .right .bars {
     margin-bottom: 16px;
@@ -730,17 +741,14 @@ footer {
     background: #222222;
     height: 350px;
     border-radius: 6px;
-    padding: 12px 12px;
+    padding: 20px 12px;
     text-align: center;
     transition: all 0.3s ease;
 }
 
 .projects .carousel .card:hover {
-    background: var(--primary-color);
-}
-
-.projects .carousel .card:hover img {
-    border: 5px solid #ffffff;
+    /* background: color-mix(in srgb, var(--primary-color) 40%, white 60%); */
+    background: #191919;
 }
 
 .projects .carousel .card .box {
@@ -756,20 +764,46 @@ footer {
 }
 
 .projects .carousel .card .text {
-    font-size: 22px;
+    font-size: 20px;
     font-weight: 600;
     margin: 10px 0 7px 0;
 }
+
+.projects .carousel .card p {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+
 
 .projects .carousel .card div img {
     height: 150px;
     width: 150px;
     cursor: pointer;
     object-fit: cover;
-    border-radius: 50%;
-    border: 5px solid var(--primary-color);
+    border-radius: 15%;
     transition: all 0.3s ease;
 }
+
+.projects .carousel .card .icon-links {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.projects .carousel .card .icon-links a {
+    font-size: 26px;
+    color: #666;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.projects .carousel .card .icon-links a:hover {
+    color: var(--primary-color);
+    transform: scale(1.2);
+}
+
+
 
 
 .owl-dots {
@@ -827,7 +861,7 @@ footer {
     height: 24px;
 }
 
-.contact .contact-content .left .icons .row .info .sub-title a{
+.contact .contact-content .left .icons .row .info .sub-title a {
     cursor: pointer;
 }
 
@@ -838,7 +872,7 @@ footer {
     display: flex;
     justify-content: space-between;
     margin-top: 20px;
-    
+
 
 }
 
@@ -853,7 +887,7 @@ footer {
     cursor: pointer;
 }
 
-.contact .contact-content .left .others-profile a:first-child, 
+.contact .contact-content .left .others-profile a:first-child,
 .contact .contact-content .left .others-profile a:last-child {
     opacity: 0.6;
 }
@@ -911,7 +945,9 @@ footer {
     width: 100%;
     margin-bottom: 15px;
 }
-.contact .right form .field input, .contact .right form .field textarea{
+
+.contact .right form .field input,
+.contact .right form .field textarea {
     cursor: pointer;
 }
 
@@ -1007,22 +1043,22 @@ footer .footer-center {
     text-align: center;
 }
 
-footer .footer-center a{
+footer .footer-center a {
     color: white;
 }
 
 
-
-
-
 /* responsive media query start */
-@media(max-width: 1300px) {
+
+/* large desktops */
+@media(max-width: 1200px) {
     .home .max-width {
         margin-left: 0px;
     }
 }
 
-@media(max-width: 1104px) {
+/* tablets / small laptops */
+@media(max-width: 992px) {
     .about .about-content .left img {
         height: 350px;
         width: 350px;
@@ -1034,19 +1070,14 @@ footer .footer-center a{
         width: calc(50% - 10px);
         margin-bottom: 20px;
     }
-}
 
-@media(max-width: 991px) {
-    .max-width {
-        margin-left: 0px 50px;
-    }
-}
-
-@media (max-width: 947px) {
     .max-width {
         padding: 0 50px;
     }
+}
 
+/* tablets*/
+@media (max-width: 850px) {
     .menu-btn {
         display: block;
         z-index: 9999;
@@ -1115,11 +1146,6 @@ footer .footer-center a{
         flex: 100%;
     }
 
-    .services .serv-content .card {
-        width: calc(50% - 10px);
-        margin-bottom: 20px;
-    }
-
     .skills .skill-content .column,
     .contact .contact-content .column {
         width: 100%;
@@ -1127,17 +1153,55 @@ footer .footer-center a{
     }
 }
 
-@media(max-width: 690px) {
+/* tablets / large phones */
+@media (max-width: 768px) {
+    .home {
+        position: relative;
+        /* crucial */
+        background-position: right center !important;
+        background-image: none;
+        overflow: hidden;
+        /* optional: avoids scrollbars from blur */
+    }
+
+    .home::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url('images/fcov.webp');
+        background-position: right center !important;
+        background-attachment: fixed;
+        background-size: cover;
+        filter: blur(0px) opacity(0.20);
+        z-index: 0;
+    }
+
+    .home>* {
+        position: relative;
+        z-index: 1;
+    }
+}
+
+
+/* phones */
+@media(max-width: 576px) {
     .max-width {
         padding: 0 23px;
     }
 
+    .home .home-content .text-1 {
+        font-size: 22px;
+    }
+
     .home .home-content .text-2 {
-        font-size: 60px;
+        font-size: 50px;
     }
 
     .home .home-content .text-3 {
-        font-size: 32px;
+        font-size: 22px;
     }
 
     .home .home-content a {
@@ -1150,16 +1214,19 @@ footer .footer-center a{
     }
 }
 
-@media(max-width: 500px) {
-    .max-width {
-        padding: 0 23px;
-    }
 
+/* small phones */
+@media(max-width: 400px) {
     .home .home-content .text-2 {
-        font-size: 50px;
+        font-size: 40px;
     }
 
     .home .home-content .text-3 {
-        font-size: 27 px;
+        font-size: 20px;
+    }
+
+    .home .home-content a {
+        font-size: 18px;
+        padding: 8px 20px;
     }
 }
