@@ -43,68 +43,66 @@ $(document).ready(function () {
     //on logo icon click listener
     // Select the link element
     var link = document.getElementById('applogo');
-        
+
     // Add a click event listener to the link
-    link.addEventListener('click', function(event) {
+    link.addEventListener('click', function (event) {
         // Prevent the default behavior of the link (navigating to "#")
         event.preventDefault();
-        
+
         // Perform some logic to determine the URL dynamically
         var dynamicUrl = window.location.href; // Replace this with your dynamic URL logic
         var baseUrl = dynamicUrl.split('/').slice(0, 3).join('/');
-        
+
         // Set the href attribute of the link to the dynamic URL
         link.href = baseUrl;
-       
-        
+
+
         // Navigate to the dynamic URL
         window.location.href = baseUrl;
-        console.log("d url"+baseUrl);
+        console.log("d url" + baseUrl);
     });
 
 
-    //load random site theme color
     var genColorTheme = function () {
         var colorList = [
-            '#000000', //black
-            '#ff1144', //crimson
-            '#006917', //green
-            '#07417a', //deepblue
-            '#1748e9', //bluelight
-            '#4d0786', //violet
-            '#cf4711', //deeporange
-            '#ffd00f', //yellow
-            '#ff1001', //red
-            '#8a0569', //purple
-            '#027981', //cyan
+            // Base elegant tones
+            '#1E1E2F', // dark slate
+            '#FF6B6B', // soft red
+            '#6C5DD3', // soft purple
+            '#00B8A9', // teal green
+            '#F9ED69', // pastel yellow
+            '#F08A5D', // warm coral
+            '#B83B5E', // rich magenta
+            '#3A4750', // dark gray-blue
+            '#6A2C70', // deep plum
+            '#2D4059', // deep navy
+            '#EA5455', // soft crimson
 
-            '#8B1874',
-            '#654E92',
-            '#F97B22',
-            '#0A4D68',
-            '#D14D72',
-            '#393646',
-            '#009FBD',
-            '#9A208C',
-            '#990000',
-            '#1A5D1A',
-            '#FF6666',
-            '#643843',
-            '#606C5D',
-            '#9C0F48',
-            '#0A1D37',
-            '#6F4C5B',
-            '#00AF91',
-
-
+            // Modern UI color trends
+            '#845EC2', // lavender purple
+            '#FFC75F', // orange yellow
+            '#FF9671', // mango
+            '#00C9A7', // turquoise
+            '#4B4453', // muted dark
+            '#0081CF', // sky blue
+            '#A178DF', // purple haze
+            '#4DD599', // mint green
+            '#FB7B6B', // salmon pink
+            '#E4BAD4', // soft pink
+            '#2F4858', // rich slate
+            '#455A64', // blue gray
+            '#009688', // material teal
         ];
-        var totalColor = colorList.length;
-        let randomNumber = Math.random() * totalColor;
-        let position = Math.floor(randomNumber);
-        var rootElement = document.querySelector(':root');
-        rootElement.style.setProperty('--primary-color', colorList[position]);
-    }
+
+
+        var position = Math.floor(Math.random() * colorList.length);
+        var selectedColor = colorList[position];
+
+        document.documentElement.style.setProperty('--primary-color', selectedColor);
+    };
+
     genColorTheme();
+
 
 
     var workList = ["App Developer", "Contest Programmer", "Blogger"];
@@ -117,40 +115,36 @@ $(document).ready(function () {
         loop: true
     });
 
-    var typed = new Typed(".typing2", {
-        strings: workList,
-        typeSpeed: 100,
-        backSpeed: 60,
-        loop: true
-    });
-
     // owl carousel script
     var owl = $('.owl-carousel');
     owl.owlCarousel({
-        items: 10,
-        loop: true,
+        loop: false,
         margin: 16,
         // slideTransition: '',
-        autoplay: true,
-        autoplaySpeed:700,
-        autoplayTimeout: 2000,
+        autoplay: false,
+        autoplaySpeed: 1000,
+        autoplayTimeout: 3000,
         autoplayHoverPause: true,
+        smartSpeed: 600,
+        dots: true,
+        dotsEach:true,
+        lazyLoad: true,
         responsive: {
             0: {
                 items: 1,
-                nav: false
+                //nav: false
             },
-            350: {
+            480: {
                 items: 2,
-                nav: false
+                // nav: false
             },
-            750: {
+            768: {
                 items: 3,
-                nav: false
+                // nav: false
             },
-            1000: {
+            1024: {
                 items: 4,
-                nav: false
+                //  nav: false
             }
         }
     });
